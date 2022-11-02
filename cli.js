@@ -27,14 +27,14 @@ if(args.n) {
 } else if (args.s) {
     latitude = -args.s;
 } else {
-    console.log('Invalid Latitude');
+    console.log('Latitude must be in range');
 }
 if(args.e) {
     longitude = args.e;
 } else if (args.w) {
     longitude = -args.w;
 } else {
-    console.log('Invalid Longitude');
+    console.log('Longitude must be in range');
 }
 
 let timezone = moment.tz.guess();
