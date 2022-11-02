@@ -64,3 +64,12 @@ if (args.h) {
     console.log(data)
 
 }
+
+let result = ''
+if(data.daily.precipitation_hours[day] != 0){
+    result = 'You might need your galoshes ';
+} else {
+    result = "You probably won't need your galoshes ";
+}
+
+console.log(result);
